@@ -26,7 +26,7 @@ class Student:
             a=read_data(q1)   
             self.student_id=a[0][0]
         else:
-            sql_query="update student set name='{}',age={},score={} where student_id={}".format(self.name,self.age,self.score,self.b)
+            sql_query="update student set  student_id={},name='{}',age={},score={} where student_id={}".format(self.student_id,self.name,self.age,self.score,self.b)
             write_data(sql_query) 
         
     @classmethod
